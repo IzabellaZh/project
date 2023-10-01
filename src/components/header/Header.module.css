@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Causten-Medium';
+    src: local("Causten-Medium"),
+    url("./../../fonts/Causten-Medium.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Causten-Regular';
+    src: local("Causten-Regular"),
+    url("./../../fonts/Causten-Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'coresansc_95black';
+    src: local("coresansc_95black"),
+    url("./../../fonts/coresansc_95black.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+/*@font-face {*/
+/*    font-family: 'Causten-Medium';*/
+/*    src: url("../fonts/Causten-Medium.otf");*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*}*/
+/*@font-face {*/
+/*    font-family: 'coresansc_95black';*/
+/*    src: url("./fonts/coresansc_95black.otf");*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*}*/
+.header{
+    color: aqua;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+}
+.header__row{
+    width: 1237px;
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__row_nav{
+    font-family: 'Causten-Regular';
+    text-decoration: none;
+    display: flex;
+    gap: 40px;
+}
+.header__row_nav_search{
+    display: flex;
+    width: 267px;
+    height: 44px;
+    border-radius: 8px;
+    background: #F6F6F6;
+    align-items: center;
+}
+.header__row_nav_search_img{
+    width: 20px;
+    height: 20px;
+}
+.header__row_nav_search_input{
+    font-family: 'Causten-Regular';
+    background: #F6F6F6;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.header__row_nav_search_row{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.header__row_icons{
+    display: flex;
+    gap: 12px;
+}
+.icon{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #F6F6F6;
+}
+.jpg{
+    display: flex;
+    gap: 12px;
+}
+.header_icon{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #F6F6F6;
+}
+.decoration{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #807D7E;
+}
+.decoration:hover{
+    font-weight: 700;
+    color: #3C4242;
+}
+.header_promo_text{
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    position: absolute;
+    left: 139px;
+    top: 129px;
+}
+.header_promo_p{
+    font-family: 'coresansc_95black';
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.157px;
+    text-transform: capitalize;
+    color: #FFF;
+}
+.header_promo_h1{
+    font-family: 'coresansc_95black';
+    font-size: 78px;
+    letter-spacing: 0.315px;
+    font-weight: 800;
+    color: #FFF;
+}
+.header_promo_button{
+    width: 250px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Causten-Regular';
+    font-size: 24px;
+    font-weight: 700;
+    color: #3C4242;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+}
+.header_promo{
+    position: relative;
+    margin-top: 32px;
+}
+.header_promo::before{
+    content: url("./../../img/ChevronLeft.png");
+    position: absolute;
+    top: 283px;
+    left: 40px;
+    cursor: pointer;
+}
+.header_promo::after{
+    content: url("./../../img/ChevronRight.png");
+    position: absolute;
+    top: 283px;
+    right: 40px;
+    cursor: pointer;
+}
+.card_main{
+    color: blue;
+}
+.header_promo_img{
+    color: aliceblue;
+}
+.line{
+    display: flex;
+}
+.main_style{
+    display: flex;
+    width: 270px;
+    align-items: center;
+    /*height: 449px;*/
+}
+.main_h4_title{
+    color: #2A2F2F;
+    font-family: 'Causten-Regular';
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.715px;
+}
+.main_h4_desc{
+    color: #7F7F7F;
+    font-family: 'Causten-Regular';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.536px;
+}
+.main_line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.purple_block{
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background: #8A33FD;
+}
+.categories_for_men{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 101px;
+}
+.categories_for_men_h1{
+    font-family: 'coresansc_95black';
+    color: #3C4242;
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: 0.68px;
+}
+.main_cards{
+    margin-top: 70px;
+}
+.login{
+    height: 44px;
+    border-radius: 8px;
+    background: #F6F6F6;
+}
+
+
+

@@ -1,0 +1,89 @@
+{
+    id: 1,
+    title: 'Shirts',
+    img: 'photo1.png',
+    desc: 'Explore Now!',
+    category: 'Men'
+},
+{
+    id: 2,
+    title: 'Printed T-Shirts',
+    img: 'photo2.png',
+    desc: 'Explore Now!',
+    category: 'Men'
+},
+{
+    id: 3,
+    title: 'Plain T-Shirt',
+    img: 'photo3.png',
+    desc: 'Explore Now!',
+    category: 'Men'
+},
+{
+    id: 4,
+    title: 'Polo T-Shirt',
+    img: 'photo4.png',
+    desc: 'Explore Now!',
+    category: 'Men'
+},
+{
+    id: 5,
+    title: 'Hoodies & Sweetshirt',
+    img: 'photo5.png',
+    desc: 'Explore Now!',
+    category: 'Men'
+},
+{
+    id: 6,
+    title: 'Jeans',
+    img: 'photo6.png',
+    desc: 'Explore Now!',
+    category: 'Men'
+},
+{
+    id: 7,
+    title: 'Activewear',
+    img: 'photo7.png',
+    desc: 'Explore Now!',
+    category: 'Men'
+},
+{
+    id: 8,
+    title: 'Boxers',
+    img: 'photo8.png',
+    desc: 'Explore Now!',
+    category: 'Men'
+},
+
+
+function Main(props){
+    return(
+        <div className={styles.main_style}>
+            <h4>{props.items.id}</h4>
+            <h4>{props.items.title}</h4>
+            <img src={props.items.card}/>
+            <h4>{props.items.desc}</h4>
+            <h4>{props.items.category}</h4>
+
+        </div>
+    )
+
+}
+
+
+ <Main
+               items={{
+                   id: 1,
+                   title: 'Shirts',
+                   img: 'photo1.png',
+                   desc: 'Explore Now!',
+                   category: 'Men'
+               },
+               {
+                   id: 2,
+                   title: 'Printed T-Shirts',
+                   img: 'photo2.png',
+                   desc: 'Explore Now!',
+                   category: 'Men'
+               }}
+               />
